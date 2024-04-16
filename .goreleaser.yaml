@@ -47,9 +47,9 @@ changelog:
 
 
 brews:
-  - tap:
+  - repository:
       owner: mickeey2525
       name: ec2-fuzzysearch
-    folder: Formula
+    directory: Formula
     homepage: https://github.com/mickeey2525/ec2-fuzzysearch
     description: Fuzzy search aws ec2 instance

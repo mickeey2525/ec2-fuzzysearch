@@ -1,7 +1,6 @@
 # ec2-fuzzysearch
 
-This is a simple Python script that uses fuzzy search to find EC2 instances in your AWS account.
-It uses aws cli to get the list of instances and then uses fuzzy search to find the instances you are looking for.
+This is a simple CLI that searches for EC2 instances in your AWS account using the Name Tag. It utilizes the AWS CLI to retrieve the list of instances, then applies fuzzy search to help you find the instance you are looking for.
 
 ## Installation
 

@@ -5,20 +5,20 @@
 class Ec2Fuzzysearch < Formula
   desc "Fuzzy search aws ec2 instance"
   homepage "https://github.com/mickeey2525/ec2-fuzzysearch"
-  version "0.0.2"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.2/ec2-fuzzysearch_Darwin_x86_64.tar.gz"
-      sha256 "e93b769bfa411d55a216ed915139eb09d4b4512e16b7b6683d502f186296dc66"
+      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.4/ec2-fuzzysearch_Darwin_x86_64.tar.gz"
+      sha256 "95b585333873747cab4ce5fda653d9f636c0025bb5f2cdaeb1693c345567f670"
 
       def install
         bin.install "ec2-fuzzysearch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.2/ec2-fuzzysearch_Darwin_arm64.tar.gz"
-      sha256 "44e989d604fcee556533d8a194340a58a05c423497a7760ab0a30fd4d55c84f7"
+      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.4/ec2-fuzzysearch_Darwin_arm64.tar.gz"
+      sha256 "57a02c0a20f86ff7850c0e26195613b3c45570ffab1202a8a99fd5fb30f765ff"
 
       def install
         bin.install "ec2-fuzzysearch"
@@ -28,16 +28,16 @@ class Ec2Fuzzysearch < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.2/ec2-fuzzysearch_Linux_x86_64.tar.gz"
-      sha256 "c9ec3d9566a0bea0262fb597f6c4d3ae375bfbedf0f4afcfbd5f14e328083b68"
+      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.4/ec2-fuzzysearch_Linux_x86_64.tar.gz"
+      sha256 "30a28ba032c3e571b45854318e5b4e44a21979b52f5ea4fc7cb0c421476129f7"
 
       def install
         bin.install "ec2-fuzzysearch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.2/ec2-fuzzysearch_Linux_arm64.tar.gz"
-      sha256 "6e846f5d1053301080380820f38663c9ed951254661a93ffbf86fe67a0cb3441"
+      url "https://github.com/mickeey2525/ec2-fuzzysearch/releases/download/0.0.4/ec2-fuzzysearch_Linux_arm64.tar.gz"
+      sha256 "56cd74b08a18e3ce038412c369a3923d2f4b37830a645075692d21570d4c2129"
 
       def install
         bin.install "ec2-fuzzysearch"

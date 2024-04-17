@@ -1,6 +1,7 @@
 # ec2-fuzzysearch
 
-This is a simple CLI that searches for EC2 instances in your AWS account using the Name Tag. It utilizes the AWS CLI to retrieve the list of instances, then applies fuzzy search to help you find the instance you are looking for.
+This is a simple CLI that searches for EC2 instances in your AWS account using the Name Tag.
+It utilizes the AWS SDK for Go to retrieve the list of instances that has Name tags, then applies fuzzy search to help you find the instance you are looking for.
 
 ## Installation
 
@@ -21,9 +22,16 @@ export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 export AWS_SESSION_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
+or you can use aws profile for sso users.
+i.e.
+```bash
+export AWS_PROFILE=sso
+```
+
+Then you can run the following command to search for the instances.
 
 ```bash
-ec2-fuzzysearch
+ec2-fuzzysearch -p <profile> -r <region>
 ```
 
 Then you can start typing the instance name you are looking for and it will show you the fuzzy search results.

@@ -22,7 +22,7 @@ var output string
 
 func init() {
 	flag.StringVar(&profile, "profile", "", "AWS profile name")
-	flag.StringVar(&profile, "p", "", "AWS region"+"(shorthand)")
+	flag.StringVar(&profile, "p", "", "AWS profile name"+"(shorthand)")
 	flag.StringVar(&region, "region", "ap-northeast-1", "AWS region")
 	flag.StringVar(&region, "r", "ap-northeast-1", "AWS region"+"(shorthand)")
 	flag.StringVar(&output, "output", "text", "Output format (text or json)")

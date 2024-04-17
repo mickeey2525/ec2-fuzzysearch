@@ -5,7 +5,7 @@
 class Ec2Fuzzysearch < Formula
   desc "Fuzzy search aws ec2 instance"
   homepage "https://github.com/mickeey2525/ec2-fuzzysearch"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?

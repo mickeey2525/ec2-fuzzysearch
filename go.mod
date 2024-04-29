@@ -3,7 +3,7 @@ module github.com/mickeey2525/ec2-fuzzysearch
 go 1.22.2
 
 require (
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.156.0
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.159.0
 	github.com/ktr0731/go-fuzzyfinder v0.8.0
 )
 
